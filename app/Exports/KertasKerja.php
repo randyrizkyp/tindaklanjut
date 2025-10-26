@@ -25,7 +25,7 @@ class KertasKerja implements FromArray, WithHeadings, WithStyles, WithCustomStar
     {
         $this->id_rekom = $id_rekom;
 
-        // Ambil data rekomendasi & temuan
+        // Ambil data rekomendasi & temuan & Nomor LHP
         $rekom = Rekomendasi::with(['temuan', 'lhp', 'temuan'])->find($id_rekom);
 
         $this->temuan = $rekom?->temuan?->temuan ?? '-';

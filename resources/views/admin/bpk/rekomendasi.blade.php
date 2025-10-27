@@ -124,7 +124,7 @@
                                              </small></p>
                                           </td>
                                           <td class="text-end"><p><small>{{ formatRupiah($rm->nilai_rekom) }}</small></p></td>
-                                          <td>{{$rm->ket}}</td>
+                                          <td><p><small>{{$rm->ket}}</small></p></td>
                                           <td class="text-center"> 
                                              <a href="/bpkdetailrekom/{{$rm->id}}" class="btn btn-sm btn-success m-1">
                                                 <i class="fa fa-cogs"></i>
